@@ -13,3 +13,4 @@ for root, dirs, files in os.walk(path2data):
         temp["ID"] = file
         temp.to_sql("Qishi_10K10Q_Raw", db_engine, if_exists='append', index=False, index_label='ID')
         print(file + " Insert OK!")
+
